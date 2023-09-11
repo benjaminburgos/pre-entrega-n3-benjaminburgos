@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+@font-face {
+    font-family: cinzel;
+    src: url(fonts/Cinzel-VariableFont_wght.ttf);
+}
+
+.navbar{
+    height: 70px;
+    background-color: rgb(26, 23, 23);
+    box-shadow: 0 0 5px black;
+}
+
+.titulo{
+    font-family: cinzel;
+}
+
+
+
+.navbar-brand img{
+    height: 50px;
+    
+}
+
+
+.nav-link{
+    color: rgb(255, 255, 255) !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.jumbotron{
+    height: 500px;
+    width: 100%;
+    background-image: url(img/fondo.jfif);
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    text-shadow: 0 0 5px black, 0 0 5px black;
+    
+}
+
+h1{
+    color: white;
+    filter: brightness(100%);
+    font-family: cinzel;
+    padding: 190px;
+    margin-left: 20px;
+    text-align: center;
+    font-size: 40px;
+    
+}
+h2{
+    text-align: center;
+    background-color: rgb(26, 23, 23);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:15px;
+    margin-bottom: 0;
+    text-shadow: 0 0 5px black, 0 0 5px black;
+}
+.nleft{
+    height: 400px;
+    width: 50%;
+    background-image: url(img/278253221_352191680265834_1907003014612662222_n.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media only screen and (min-width:0) and (max-width:576px) {
+    .navbar-collapse{
+        background-color: rgb(14, 11, 11);
+        display: flex;
+        justify-content: center !important;
+    }
+    
+}
+
+.productos1{
+    text-align: center;
+
+}
+.galeria{
+    height: 900px;
+    background-color: rgb(29, 26, 26);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: "img1 img2 img3 img3"
+                    "img1 img4 img5 img6"
+                    "img7 img4 img8 img8";
+                    grid-gap: 20px;
+                    padding: 20px;
+}
+
+.item{
+    border: 2px solid black;
+    background-size: cover ;
+    background-position: center;
+    border-radius: 10px;
+    filter: grayscale(100%);
+    transition: all 0.4s;
+}
+.item:hover{
+    filter: grayscale(0%);
+    transition: all 0.4s;
+    transform: scale(1.05);
+
+}
+
+.item1{
+    grid-area: img1;
+    background-image: url(img/producto2.jpg);
+    
+}
+
+.item2{
+    grid-area: img2;
+    background-image: url(img/producto8.jpg);
+}
+
+.item3{
+    grid-area: img3;
+    background-image: url(img/producto4.jpg);
+}
+
+.item4{
+    grid-area: img4;
+    background-image: url(img/producto1.jpg);
+}
+
+.item5{
+    grid-area: img5;
+    background-image: url(img/producto3.jpg);
+}
+
+.item6{
+    grid-area: img6;
+    background-image: url(img/producto6.jpg);
+}
+
+.item7{
+    grid-area: img7;
+    background-image: url(img/producto5.jpg);
+}
+.item8{
+    grid-area: img8;
+    background-image: url(img/producto7.jpg);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.contacto{
+    height: 1100px;
+    background-image: url(image/resina\ edit.jfif);
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+}
+.contacto1{
+
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+    border: 5px solid gray;
+    background-color: black;
+    box-shadow: inset 0 0 3px;
+    
+    
+}
+
+.contacto2{
+    width: 50%;
+    color: white;
+    width: 30%;
+    border: 5px solid black ;
+    padding: 25px;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 15px;
+    
+}
+
+
+.h2{
+    padding: 40px;
+    width: 20%;
+    border: 5px solid white;
+    background-color: black;
+    text-align: center;
+    margin: 40px;
+    margin-left: 750px;
+    font-size: 30px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+
+}
+
+.h2mail{
+    padding: 40px;
+    color: white;
+    width: 20%;
+    border: 5px solid white;
+    background-color: black;
+    text-align: center;
+    margin: 40px;
+    margin-left: 750px;
+    font-size: 23px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+
+}
